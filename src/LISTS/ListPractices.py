@@ -51,10 +51,39 @@ first_three = cities[0:3]
 first_three = cities[:3]
 
 
+# s[begin: end: step]
+# s[begin], s[begin + 1 * step], ... s[begin + i * step] for all (begin + i * step) < end.
+
+stng = "Python under Linux is great"
+stng[::3]
+
+s="TPoyrtohnotno  ciosu rtshees  lianr gTeosrto nCtiot yb yi nB oCdaennasdeao"
+s[::2] #'Toronto is the largest City in Canada'
+s[1::2]#'Python courses in Toronto by Bodenseo'
 
 
+s = "Toronto is the largest City in Canada"
+t = "Python courses in Toronto by Bodenseo"
+s = "".join(["".join(x) for x in zip(s,t)])
+print(s)#'TPoyrtohnotno  ciosu rtshees  lianr gTeosrto nCtiot yb yi nB oCdaennasdeao'
 
 
+txt = "Hello World"
+print(len(txt))
+
+colours1 = ["red", "green","blue"]
+colours2 = ["black", "white"]
+colours = colours1 + colours2
+print(colours)
+
+abc = ["a","b","c","d","e"]
+print("a" in abc)
+print("a" not in abc)
+print("e" not in abc)
+
+x = ["a","b","c"]
+y = [x] * 4
+print(y)
 
 
 
