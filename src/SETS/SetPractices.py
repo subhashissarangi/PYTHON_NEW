@@ -17,6 +17,7 @@ print(cities)
 
 #FrozenSet
 cities = frozenset(["Frankfurt", "Basel","Freiburg"])
+print(cities)
 #cities.add("Strasbourg")
 #After python 2.6 we can create set as
 adjectives = {"cheap","expensive","inexpensive","economical"}
@@ -93,11 +94,11 @@ print(x & y) #The above both statements performs the same task
 # isdisjoint() This method returns True if two sets have a null intersection. 
 x = {"a","b","c"}
 y = {"c","d","e"}
-x.isdisjoint(y)
+print(x.isdisjoint(y))
 
 x = {"a","b","c"}
 y = {"d","e","f"}
-x.isdisjoint(y)
+print(x.isdisjoint(y))
 
 # issubset() 
 # x.issubset(y) returns True, if x is a subset of y. "<=" is an abbreviation for "Subset of" and ">=" for "superset of"
@@ -118,7 +119,7 @@ print(x <= x )
 
 x = {"a","b","c","d","e"}
 y = {"c","d"}
-x.issuperset(y)
+print(x.issuperset(y))
 print(x > y)
 print( x >= y)
 print( x <= y)
